@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const PostsModels = mongoose.model(
+const PostsModel = mongoose.model(
     //nom de la base de donnée
     "node-api",
     // on déclare l'interieur de la table
@@ -10,7 +10,7 @@ const PostsModels = mongoose.model(
             required: true
         },
         message: {
-            tupe: String,
+            type: String,
             required: true
         },
         date: {
@@ -22,4 +22,5 @@ const PostsModels = mongoose.model(
     "posts"
 );
 
-module.exports = { PostsModels };
+
+module.exports = { PostsModel };
